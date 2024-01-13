@@ -4,6 +4,43 @@ cream #F1EEE8
 beige #DAD0C8 */
 
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.foots{
+    background-color:#DAD0C8;
+    display: flex;
+}
+
+.footy-items ul{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    list-style-type: none;   
+}
+
+.footy-items ul li a{
+    display: flex;
+    padding: 5%;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.socials{
+    justify-content: center;
+    align-items: center;
+}
+
+.socials img{
+    height:30%;
+    width: 2%;
+}
+
+.copyrighted{
+    text-align: center;
+    bottom: 0;
 }

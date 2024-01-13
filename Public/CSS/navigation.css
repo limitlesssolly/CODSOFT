@@ -4,6 +4,8 @@ cream #F1EEE8
 beige #DAD0C8 */
 
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -12,7 +14,7 @@ beige #DAD0C8 */
     padding: 5px;
     display: flex;
     /* background-color: #BED1CD;    */
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     width: auto;
 }
@@ -34,7 +36,7 @@ beige #DAD0C8 */
 .navi-items ul{
     position: relative;
     top: 0%;
-    left: 100%;
+    left: 110%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -52,12 +54,12 @@ beige #DAD0C8 */
 }
 
 .navi-items ul li a:hover{
-    color: #BED1CD;
+    color: #DAD0C8;
 }
 
-.open{
-    color: #BED1CD;
-}
+/* .open{
+    color: #DAD0C8;
+} */
 
 /* @media (max-width: 600px) {
     .navs a {
