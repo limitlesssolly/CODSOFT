@@ -59,3 +59,10 @@ beige #DAD0C8 */
     color: #BED1CD;
 }
 
+/* @media (max-width: 600px) {
+    .navs a {
+        width: 100%;
+        float: none;
+    }
+} */
+
