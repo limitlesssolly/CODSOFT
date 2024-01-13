@@ -1,0 +1,61 @@
+/* main colors: 
+blue #BED1CD
+cream #F1EEE8
+beige #DAD0C8 */
+
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navs{
+    padding: 5px;
+    display: flex;
+    /* background-color: #BED1CD;    */
+    position: sticky;
+    top: 0;
+    width: auto;
+}
+
+.iconic{
+    height:100%;
+    width: 5%;
+}
+
+.named{
+    display: flex;
+    padding: 15px 0;
+}
+
+.named span{
+    font-weight: 650;
+}
+
+.navi-items ul{
+    position: relative;
+    top: 0%;
+    left: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navi-items ul li a{
+    display: flex;
+    padding: 15px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navi-items ul li a:hover{
+    color: #BED1CD;
+}
+
+.open{
+    color: #BED1CD;
+}
+
