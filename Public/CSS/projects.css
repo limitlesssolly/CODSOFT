@@ -1,0 +1,11 @@
+/* main colors: 
+blue #BED1CD
+cream #F1EEE8
+beige #DAD0C8 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
