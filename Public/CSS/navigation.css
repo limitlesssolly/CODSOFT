@@ -42,6 +42,8 @@ beige #DAD0C8 */
 .named {
     display: flex;
     padding: 15px 0;
+    text-decoration: none;
+    color: #000;
 }
 
 .named span {
