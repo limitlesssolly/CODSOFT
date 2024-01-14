@@ -11,8 +11,20 @@ beige #DAD0C8 */
 }
 
 .foots{
-    background-color:#DAD0C8;
+    position: absolute;
+    bottom: 0px;
     display: flex;
+    width: 100%;
+}
+
+.clickables{
+    bottom: 10px;
+    background-color:#F1EEE8;
+    text-align: center;
+    position: absolute;
+    padding: 40px;
+    left: 0;
+    width: 100%;
 }
 
 .footy-items ul{
@@ -24,23 +36,40 @@ beige #DAD0C8 */
 
 .footy-items ul li a{
     display: flex;
-    padding: 5%;
+    padding: 10px;
     color: #000;
     text-align: center;
     text-decoration: none;
+    position: relative;
+    bottom: 25px;
+}
+
+.footy-items ul li a:hover {
+    color: #DAD0C8;
 }
 
 .socials{
+    position: relative;
+    bottom: 15px;
     justify-content: center;
     align-items: center;
 }
 
+.socials a {
+    padding: 0 10px;
+}
+
 .socials img{
-    height:30%;
-    width: 2%;
+    height:25px;
+    width:25px;
 }
 
 .copyrighted{
+    background-color:#DAD0C8 ;
     text-align: center;
-    bottom: 0;
+    position: absolute;
+    bottom: 0px;
+    padding: 15px;
+    left: 0;
+    width: 100%;
 }
