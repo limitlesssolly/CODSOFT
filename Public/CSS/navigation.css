@@ -3,14 +3,14 @@ blue #BED1CD
 cream #F1EEE8
 beige #DAD0C8 */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navs{
+.navs {
     padding: 5px;
     display: flex;
     /* background-color: #BED1CD;    */
@@ -19,33 +19,49 @@ beige #DAD0C8 */
     width: auto;
 }
 
-.iconic{
-    height:100%;
-    width: 5%;
+.iconic {
+    height: 60px;
+    width: 80px;
 }
 
-.named{
+#burger {
+    height: 20px;
+    width: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3%;
+    right: 8%;
+}
+
+#burger:hover {
+    cursor: pointer;
+}
+
+.named {
     display: flex;
     padding: 15px 0;
 }
 
-.named span{
+.named span {
     font-weight: 650;
 }
 
-.navi-items ul{
-    position: relative;
-    top: 0%;
-    left: 110%;
+.navi-items ul {
+    position: absolute;
+    top: 1%;
+    right: 0%;
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-direction: row;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.navi-items ul li a{
+.navi-items ul li a {
     display: flex;
     padding: 15px;
     color: #000;
@@ -53,18 +69,43 @@ beige #DAD0C8 */
     text-decoration: none;
 }
 
-.navi-items ul li a:hover{
+.navi-items ul li a:hover {
     color: #DAD0C8;
 }
 
-/* .open{
-    color: #DAD0C8;
-} */
+@media (max-width: 600px) {
 
-/* @media (max-width: 600px) {
-    .navs a {
-        width: 100%;
-        float: none;
+    .navi-items-responsive ul {
+        top: 6%;
+        flex-direction: column;
+        position: absolute;
+        right: 0%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
-} */
 
+    .navi-items-responsive ul li a {
+        display: flex;
+        padding: 15px;
+        color: #000;
+        text-align: center;
+        text-decoration: none;
+        z-index: 4;
+    }
+
+    .navi-items-responsive ul li a:hover {
+        color: #DAD0C8;
+    }
+
+    .navi-items ul li a {
+        display: none;
+    }
+
+    #burger {
+        display: flex;
+    }
+}
