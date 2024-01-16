@@ -13,3 +13,35 @@ beige #DAD0C8 */
 body{
     background-color: #BED1CD;
 }
+
+.about{
+    display: flex;
+}
+
+.discription{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.discribing-pix{
+    float: right;
+}
+
+.backLayerOne{
+    width: 30%;
+    height: 50%;
+    z-index: 1;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+}
+
+.backLayerToo{
+    width: 30%;
+    height: 50%;
+    z-index: 2;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+} 
