@@ -13,8 +13,6 @@ beige #DAD0C8 */
 .navs {
     padding: 5px;
     display: flex;
-    /* background-color: #BED1CD;    */
-    /* position: sticky; */
     top: 0;
     width: auto;
 }
@@ -22,6 +20,25 @@ beige #DAD0C8 */
 .iconic {
     height: 60px;
     width: 80px;
+    
+    /* animation:downSlider 1s ease-in; */
+}
+
+.iconic:hover{
+    animation: rotational 1.5s ease;
+    cursor: pointer;
+}
+
+.named {
+    display: flex;
+    padding: 15px 0;
+    text-decoration: none;
+    color: #000;
+    /* animation:downSlider 1s ease-in; */
+}
+
+.named span {
+    font-weight: 650;
 }
 
 #burger {
@@ -31,24 +48,15 @@ beige #DAD0C8 */
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 3%;
-    right: 8%;
+    top: 25px;
+    right: 53px;
+    /* animation:downSlider 1s ease-in; */
 }
 
 #burger:hover {
     cursor: pointer;
 }
 
-.named {
-    display: flex;
-    padding: 15px 0;
-    text-decoration: none;
-    color: #000;
-}
-
-.named span {
-    font-weight: 650;
-}
 
 .navi-items ul {
     position: absolute;
@@ -69,10 +77,11 @@ beige #DAD0C8 */
     color: #000;
     text-align: center;
     text-decoration: none;
+    /* animation:downSlider 1s ease-in; */
 }
 
 .navi-items ul li a:hover {
-    color: #DAD0C8;
+    color: #F1EEE8;
 }
 
 @media (max-width: 600px) {
@@ -100,7 +109,7 @@ beige #DAD0C8 */
     }
 
     .navi-items-responsive ul li a:hover {
-        color: #DAD0C8;
+        color: #F1EEE8;
     }
 
     .navi-items ul li a {
@@ -110,4 +119,25 @@ beige #DAD0C8 */
     #burger {
         display: flex;
     }
+}
+
+@keyframes downSlider {
+    from {
+        transform: translatey(-100px);
+    }
+
+    to {
+        transform: translatey(0);
+    }
+}
+
+@keyframes rotational{
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+
 }
