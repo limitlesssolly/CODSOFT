@@ -7,7 +7,7 @@ beige #DAD0C8 */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: RYSans;
 }
 
 body{
@@ -45,3 +45,9 @@ body{
     top: 80px;
     right: 30px;
 } 
+
+/* @font-face { font-family: RYScript; src: url('../Fonts/restless-youth-script.otf'); } 
+.RYScript { font-family: RYScript; font-size: 2em;} */
+
+@font-face { font-family: RYSans; src: url('../Fonts/restless-youth-sans.otf'); } 
+.RYSans { font-family: RYSans; font-size: 1em; }

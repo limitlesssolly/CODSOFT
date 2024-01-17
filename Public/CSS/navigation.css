@@ -7,7 +7,7 @@ beige #DAD0C8 */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: RYSans;
 }
 
 .navs {
@@ -31,7 +31,7 @@ beige #DAD0C8 */
 
 .named {
     display: flex;
-    padding: 15px 0;
+    padding: 18px 0;
     text-decoration: none;
     color: #000;
     /* animation:downSlider 1s ease-in; */
@@ -73,7 +73,7 @@ beige #DAD0C8 */
 
 .navi-items ul li a {
     display: flex;
-    padding: 15px;
+    padding: 18px;
     color: #000;
     text-align: center;
     text-decoration: none;
