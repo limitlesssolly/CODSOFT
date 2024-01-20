@@ -37,7 +37,7 @@ body{
     height: 200px;
     position: absolute;
     top:145px;
-    right: 80px;
+    right: 170px;
     z-index: 2;
 }
 
@@ -46,33 +46,33 @@ body{
     height: 250px;
     position: absolute;
     top: 120px;
-    right: 57px;
+    right: 147px;
     z-index: 1;
 }
 
-.starburst{
-    width: 350px;
-    height: 350px;
+.sunburst{
+    z-index: 3;
+    width: 330px;
+    height: 330px;
     position: absolute;
-    top:110px;
-    right: 120px;
-    /* animation: rotational 4s ease infinite ; */
-    /* animation-play-state: running; */
+    top:77px;
+    right: 150px;
+
+    /* -webkit-animation: round 4s linear infinite;*/
+    animation: round 6s linear infinite; 
 }
 
-/* @font-face { font-family: RYScript; src: url('../Fonts/restless-youth-script.otf'); } */
-
-@font-face { 
-    font-family: RYSans; src: url('../Fonts/restless-youth-sans.otf'); 
-}
-
-@keyframes rotational{
+@keyframes round{
     from{
-        transform: rotate(0);
+        transform: rotate(0deg);
     }
 
     to{
         transform: rotate(360deg);
     }
+}
+/* @font-face { font-family: RYScript; src: url('../Fonts/restless-youth-script.otf'); } */
 
+@font-face { 
+    font-family: RYSans; src: url('../Fonts/restless-youth-sans.otf'); 
 }
