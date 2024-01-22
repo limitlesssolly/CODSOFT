@@ -45,7 +45,9 @@ beige #DAD0C8 */
 }
 
 .footy-items ul li a:hover {
-    color: #DAD0C8;
+    cursor: pointer;
+    text-shadow: 1px 1px #DAD0C8, 2px 2px #DAD0C8,3px 3px #DAD0C8, 4px 4px #DAD0C8;
+    color: #000;
 }
 
 .socials{

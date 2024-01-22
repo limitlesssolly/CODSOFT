@@ -22,44 +22,60 @@ body{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 100px;
-    left: 50px;
+    top: 180px;
+    left: 80px;
+    font-size: 1.5vw;
 }
 
 .discribing-pix{
     justify-content: center;
     align-items: center;
-    
 }
 
 .backshapeOne{
-    width: 300px;
+    width: 210px;
     height: 200px;
     position: absolute;
-    top:145px;
-    right: 170px;
+    top:146px;
+    right: 200px;
     z-index: 2;
 }
 
 .backshapeToo{
-    width: 350px;
-    height: 250px;
+    width:220px;
+    height: 210px;
     position: absolute;
-    top: 120px;
-    right: 147px;
+    top: 140px;
+    right: 195px;
     z-index: 1;
 }
 
 .sunburst{
     z-index: 3;
-    width: 330px;
-    height: 330px;
+    width: 250px;
+    height: 250px;
     position: absolute;
-    top:77px;
-    right: 150px;
-
-    /* -webkit-animation: round 4s linear infinite;*/
+    top:125px;
+    right: 185px;
     animation: round 6s linear infinite; 
+}
+
+.solsol{
+    z-index: 4;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top:172px;
+    right: 230px;
+    border-radius: 10px;
+}
+
+.skills{
+    width: 100%;
+    height: 50px;
+    background-color: #F1EEE8;
+    position: absolute;
+    top: 400px;
 }
 
 @keyframes round{
@@ -71,7 +87,6 @@ body{
         transform: rotate(360deg);
     }
 }
-/* @font-face { font-family: RYScript; src: url('../Fonts/restless-youth-script.otf'); } */
 
 @font-face { 
     font-family: RYSans; src: url('../Fonts/restless-youth-sans.otf'); 

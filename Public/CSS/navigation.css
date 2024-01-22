@@ -23,10 +23,9 @@ beige #DAD0C8 */
     position: absolute;
     top: 10px;
     left: 10px;
-    /* animation:downSlider 1s ease-in; */
 }
 
-.iconic:hover{
+.iconic:hover {
     animation: rotational 1.5s ease;
     cursor: pointer;
 }
@@ -39,7 +38,11 @@ beige #DAD0C8 */
     position: absolute;
     top: 0px;
     left: 60px;
-    /* animation:downSlider 1s ease-in; */
+}
+
+.named:hover {
+    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+    color: #F1EEE8;
 }
 
 .named span {
@@ -55,7 +58,6 @@ beige #DAD0C8 */
     position: absolute;
     top: 25px;
     right: 53px;
-    /* animation:downSlider 1s ease-in; */
 }
 
 #burger:hover {
@@ -82,10 +84,11 @@ beige #DAD0C8 */
     color: #000;
     text-align: center;
     text-decoration: none;
-    /* animation:downSlider 1s ease-in; */
 }
 
 .navi-items ul li a:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
     color: #F1EEE8;
 }
 
@@ -136,12 +139,12 @@ beige #DAD0C8 */
     }
 }
 
-@keyframes rotational{
-    from{
+@keyframes rotational {
+    from {
         transform: rotate(0);
     }
 
-    to{
+    to {
         transform: rotate(360deg);
     }
 
