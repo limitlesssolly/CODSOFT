@@ -11,8 +11,9 @@ beige #DAD0C8 */
 }
 
 .foots{
+    margin-top: auto;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     display: flex;
     width: 100%;
 }
@@ -58,12 +59,18 @@ beige #DAD0C8 */
 }
 
 .socials a {
+    font-size: x-large;
     padding: 0 10px;
 }
 
-.socials img{
-    height:25px;
-    width:25px;
+.socials a i{
+    color: #000;
+}
+
+.socials a i:hover{
+    cursor: pointer;
+    text-shadow: 1px 1px #DAD0C8, 2px 2px #DAD0C8;
+    color: #000;
 }
 
 .copyrighted{

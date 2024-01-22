@@ -43,6 +43,7 @@ beige #DAD0C8 */
 .named:hover {
     text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
     color: #F1EEE8;
+    cursor: pointer;
 }
 
 .named span {
