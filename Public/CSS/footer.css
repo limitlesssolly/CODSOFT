@@ -16,6 +16,7 @@ beige #DAD0C8 */
     bottom: 0;
     display: flex;
     width: 100%;
+    transition: .4s;
 }
 
 .clickables{

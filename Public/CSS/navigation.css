@@ -11,10 +11,11 @@ beige #DAD0C8 */
 }
 
 .navs {
-    padding: 5px;
+    background-color: #F1EEE8;
     display: flex;
     top: 0;
     width: auto;
+    transition: .4s;
 }
 
 .iconic {

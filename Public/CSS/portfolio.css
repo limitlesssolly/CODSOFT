@@ -13,11 +13,13 @@ beige #DAD0C8 */
 body {
     background-color: #BED1CD;
     display: flex;
-    height: 1000px;
+    height: 2000px;
+    transition: .4s;
 }
 
 .about {
     display: flex;
+    flex-direction: row;
 }
 
 .discription {
@@ -25,8 +27,15 @@ body {
     align-items: center;
     position: absolute;
     top: 180px;
-    left: 80px;
-    font-size: 1.5vw;
+    left: 55px;
+    font-size: 20px;
+    width: 400px;
+}
+
+.intros{
+    font-size: 50px;
+    color: #F1EEE8;
+    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
 }
 
 .discribing-pix {
@@ -34,38 +43,20 @@ body {
     align-items: center;
 }
 
-.backshapeOne {
-    width: 210px;
-    height: 200px;
-    position: absolute;
-    top: 146px;
-    right: 200px;
-    z-index: 2;
-}
-
-.backshapeToo {
-    width: 220px;
-    height: 210px;
-    position: absolute;
-    top: 140px;
-    right: 195px;
-    z-index: 1;
-}
-
 .sunburst {
     z-index: 3;
-    width: 250px;
-    height: 250px;
+    width: 430px;
+    height: 430px;
     position: absolute;
-    top: 125px;
-    right: 185px;
-    animation: round 6s linear infinite;
+    top: 100px;
+    right: 100px;
+    /* animation: round 6s linear infinite; */
 }
 
 .solsol {
     z-index: 4;
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     position: absolute;
     top: 172px;
     right: 230px;
@@ -77,7 +68,7 @@ body {
     height:150px;
     background-color: #F1EEE8;
     position: absolute;
-    top: 400px;
+    top: 650px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -93,7 +84,7 @@ body {
     position: absolute;
     left: 0px;
     background-color: #DAD0C8;
-    width: 155px;
+    width: 150px;
     height: 100px;
     font-size: 20px;
     transform: rotate(-90deg);
@@ -101,7 +92,7 @@ body {
 
 .tickets{
     display: flex;
-    animation: scroll 10s linear infinite;
+    animation: scroll 25s linear infinite;
 }
 
 .ticket img{
@@ -132,8 +123,12 @@ body {
         transform: translateX(-100%);
     }
 }
-
 @font-face {
     font-family: RYSans;
     src: url('../Fonts/restless-youth-sans.otf');
+}
+
+@font-face {
+    font-family: Retrowavin;
+    src: url('../Fonts/Retrowave-qZR55.ttf');
 }
