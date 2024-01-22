@@ -12,7 +12,7 @@ beige #DAD0C8 */
 
 .foots{
     margin-top: auto;
-    position: absolute;
+    position: relative;
     bottom: 0;
     display: flex;
     width: 100%;

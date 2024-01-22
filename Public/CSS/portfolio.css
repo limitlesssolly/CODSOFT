@@ -13,6 +13,7 @@ beige #DAD0C8 */
 body {
     background-color: #BED1CD;
     display: flex;
+    height: 1000px;
 }
 
 .about {
@@ -90,11 +91,11 @@ body {
     z-index: 4;
     color: #000;
     position: absolute;
-    left: -30px;
+    left: 0px;
     background-color: #DAD0C8;
     width: 155px;
     height: 100px;
-    font-size: 1.5vw;
+    font-size: 20px;
     transform: rotate(-90deg);
 }
 
