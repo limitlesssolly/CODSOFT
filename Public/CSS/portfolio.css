@@ -53,12 +53,22 @@ body {
     text-align: center;
 }
 
+.click:hover{
+    color: #BED1CD;
+}
+
 .click a{
     text-decoration: none;
     color: #000;
 }
 
+.click a:hover{
+    text-decoration: none;
+    color: #BED1CD;
+}
+
 .click:active {
+    box-shadow: #DAD0C8 2px 2px 0 0;
     transform: translate(2px, 2px);
 }
 
@@ -139,6 +149,7 @@ body {
     animation-play-state: paused;
     cursor: pointer;
 }
+
 
 /* @keyframes round {
     from {
