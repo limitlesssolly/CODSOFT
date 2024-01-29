@@ -19,13 +19,17 @@ body {
     background-color: #BED1CD;
     display: flex;
     height: 2000px;
-    /* transition: .4s; */
+    transition: .4s;
 }
 
 .about {
     display: flex;
     flex-direction: row;
+    position: relative;
+    top: 7%;
     z-index: 1;
+    max-height: 400px;
+    /* background-color: #000; */
 }
 
 .intros {
@@ -40,7 +44,6 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 7%;
     left: 20%;
     font-size: 25px;
     width: 600px;
@@ -213,7 +216,7 @@ body {
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 755px){
     .discription {
         font-size: 20px;
         width: 400px;
