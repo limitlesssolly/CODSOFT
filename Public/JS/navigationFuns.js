@@ -5,7 +5,7 @@ function navigational() {
     var computedBurger = window.getComputedStyle(burgerDisplay);
     var burgerValue = computedBurger.getPropertyValue('display');
 
-    if (window.innerWidth <= 600 && burgerValue === "flex") {
+    if (window.innerWidth <= 755 && burgerValue === "flex") {
         if (items.className === "navi-items") {
             open();
         } else {

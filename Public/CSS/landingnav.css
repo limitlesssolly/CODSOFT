@@ -1,0 +1,107 @@
+/* main colors: 
+blue #BED1CD
+cream #F1EEE8
+beige #DAD0C8 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: RYSans;
+}
+
+.navs {
+    background-color: #F1EEE8;
+    display: flex;
+    top: 0;
+    width: auto;
+    transition: .4s;
+    font-size: 20px;
+}
+
+.iconic {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.iconic:hover {
+    animation: rotational 1.5s ease;
+    cursor: pointer;
+}
+
+.named {
+    display: flex;
+    padding: 18px 0;
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+}
+
+.named:hover {
+    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+    color: #F1EEE8;
+    cursor: pointer;
+}
+
+.named span {
+    font-weight: 650;
+}
+
+#burger {
+    height: 20px;
+    width: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    right: 53px;
+}
+
+#burger:hover {
+    cursor: pointer;
+}
+
+
+.navi-items ul {
+    position: absolute;
+    top: 1%;
+    right: 0%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navi-items ul li a {
+    display: flex;
+    padding: 18px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navi-items ul li a:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+    color: #F1EEE8;
+}
+
+@keyframes rotational {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}

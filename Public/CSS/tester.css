@@ -1,0 +1,20 @@
+.projects .posters{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.posters{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.posters img{
+    width: 50%;
+}
