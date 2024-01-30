@@ -17,41 +17,41 @@
             <form>
 
                 <div class="output">
-                    <input type="text" name="displayer">
+                    <input type="text" name="displayer" id="displayer">
                 </div>
 
                 <div>
-                    <input type="button" value="AC" onclick="displayer.value =''"  class="operational">
-                    <input type="button" value="DEL" onclick="displayer.value = displayer.value.toString().slice(0,-1)"  class="operational">
-                    <input type="button" value="." onclick="displayer.value +='.'"  class="operational">
-                    <input type="button" value="/" onclick="displayer.value +='/'"  class="operational">
+                    <input type="button" value="AC" onclick=delDisplayed()  class="operational">
+                    <input type="button" value="DEL" onclick=delOneDisplayed() class="operational">
+                    <input type="button" value="." onclick=displays(value)  class="operational">
+                    <input type="button" value="/" onclick=displays(value)  class="operational">
                 </div>
 
                 <div>
-                    <input type="button" value="7" onclick="displayer.value +='7'">
-                    <input type="button" value="8" onclick="displayer.value +='8'">
-                    <input type="button" value="9" onclick="displayer.value +='9'">
-                    <input type="button" value="*" onclick="displayer.value +='*'" class="operational">
+                    <input type="button" value="7" onclick=displays(value)>
+                    <input type="button" value="8" onclick=displays(value)>
+                    <input type="button" value="9" onclick=displays(value)>
+                    <input type="button" value="*" onclick=displays(value) class="operational">
                 </div>
 
                 <div>
-                    <input type="button" value="4" onclick="displayer.value +='4'">
-                    <input type="button" value="5" onclick="displayer.value +='5'">
-                    <input type="button" value="6" onclick="displayer.value +='6'">
-                    <input type="button" value="-" onclick="displayer.value +='-'" class="operational">
+                    <input type="button" value="4" onclick=displays(value)>
+                    <input type="button" value="5" onclick=displays(value)>
+                    <input type="button" value="6" onclick=displays(value)>
+                    <input type="button" value="-" onclick=displays(value) class="operational">
                 </div>
 
                 <div>
-                    <input type="button" value="1" onclick="displayer.value +='1'">
-                    <input type="button" value="2" onclick="displayer.value +='2'">
-                    <input type="button" value="3" onclick="displayer.value +='3'">
-                    <input type="button" value="+" onclick="displayer.value +='+'" class="operational">
+                    <input type="button" value="1" onclick=displays(value)>
+                    <input type="button" value="2" onclick=displays(value)>
+                    <input type="button" value="3" onclick=displays(value)>
+                    <input type="button" value="+" onclick=displays(value) class="operational">
                 </div>
 
                 <div>
-                    <input type="button" value="00" onclick="displayer.value +='00'">
-                    <input type="button" value="0" onclick="displayer.value +='0'">
-                    <input type="button" value="=" style="width: 145px;" onclick="displayer.value = eval(displayer.value)" class="operational">
+                    <input type="button" value="00" onclick=displays(value)>
+                    <input type="button" value="0" onclick=displays(value)>
+                    <input type="button" value="=" style="width: 145px;" onclick= calculate() class="operational">
                 </div>
 
             </form>
