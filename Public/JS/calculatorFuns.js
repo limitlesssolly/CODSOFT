@@ -9,7 +9,7 @@ function delDisplayed(){
 function delOneDisplayed(){
     document.getElementById("displayer").value = document.getElementById("displayer").value.toString().slice(0,-1);
 }
-onclick="displayer.value = eval(displayer.value)"
+
 function calculate(){
     document.getElementById("displayer").value = eval(document.getElementById("displayer").value);
 }
