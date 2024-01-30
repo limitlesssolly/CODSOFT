@@ -75,19 +75,18 @@ body {
 }
 
 .discribing-pix {
-    float: right;
     justify-content: center;
     align-items: center;
 }
 
-.film {
-    width: 410px;
+/* .film {
+    width: 70%;
     height: 460px;
     position: absolute;
     top: 11%;
     right: 6.6%;
     z-index: 3;
-}
+} */
 
 /* .sunburst {
     z-index: 2;
@@ -104,8 +103,8 @@ body {
     width: 300px;
     height: 400px;
     position: absolute;
-    top: 120px;
-    right: 148px;
+    top: 0px;
+    left: 920px;
     border-radius: 10px;
 }
 
@@ -150,69 +149,6 @@ body {
 .tickets:hover {
     animation-play-state: paused;
     cursor: pointer;
-}
-
-/* .abouttoo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #DAD0C8;
-    color: black;
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    top: 120%;
-} */
-
-.projects{
-    /* background-color: #DAD0C8;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    overflow: hidden; */
-    position: absolute;
-    top:40%;
-    left: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.projects h5{
-    text-align: center;
-    position: relative;
-    left: 37%;
-    width: 400px;
-    font-family: Retrowavin;
-    font-size: 50px;
-    color: #F1EEE8;
-    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
-    padding-bottom: 20px;
-}
-
-.posters{
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-auto-rows:200px;
-    grid-auto-flow: dense;
-
-}
-
-.posters img{
-    /* width: 250px;
-    height: 370px;
-    object-fit: cover;
-    object-position: bottom;
-    padding: 5px; */
-
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    display: inline-block;
-    object-fit: contain;
-    border-radius: 5px; 
 }
 
 

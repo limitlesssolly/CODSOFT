@@ -1,0 +1,61 @@
+/* Color Palette
+# 0D1F23 darkest blue
+# 132E35 darker blue
+# 2D4A53 dark blue
+# 69818D blue
+# AFB3B7 light grey 
+# 5A636A grey
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.application{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #AFB3B7;
+}
+
+.calculator{
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #2D4A53;
+}
+
+.output{
+    display: flex;
+    margin: 20px 0;
+    justify-content: flex-end;
+}
+
+.output input{
+    text-align:right;
+    flex: 1;
+    font-size: 35px;
+    box-shadow: none;
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 0 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: -8px -8px 15px #AFB3B71a,5px 5px 15px #0D1F2333;
+}
+
+.calculator form .operational{
+    color: #AFB3B7;
+}
