@@ -258,36 +258,35 @@ body {
     cursor: pointer;
 }
 
-.slidey .projects .project .popups{
-    position: absolute;
-    top: 0;
-    left: -30px;
-    background: rgba(0,0,0,.9);
-    height: 100%;
-    width: 100%;
-    z-index: 100;
-    display: none;
-}
-
-.slidey .projects .project .popups span{
-    position: absolute;
-    top: 5%;
-    right: 15%;
-    font-size: 40px;
-    font-weight: bolder;
-    color: #fff;
-    cursor: pointer;
-    z-index: 5;
-}
-
-.slidey .projects .project .popups img{
-    position: absolute;
+.popups {
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 900px;
-    height: 600px;
-    object-fit: cover;
+    background: #F1EEE8;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.popups img {
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 90vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.popups .close {
+    color: #000;
+    font-family: RYsans;
+    position: absolute;
+    top: 3px;
+    right: 7px;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
 }
 
 .smolprojects{
@@ -295,7 +294,7 @@ body {
     bottom:50px;
     left: 50%;
     width: max-content;
-    z-index: 4;
+    z-index: 3;
     display: flex;
     gap: 20px;
 }
@@ -355,7 +354,7 @@ body {
     font-weight: bold;
     font-size: large;
     transition: .5s;
-    z-index: 4;
+    z-index: 3;
     cursor: pointer;
 }
 
