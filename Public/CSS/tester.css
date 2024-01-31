@@ -1,67 +1,258 @@
-.skills {
+.slidey {
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
-    width: 100%;
-    height: 150px;
-    background-color: #F1EEE8;
+    position: relative;
+}
+
+.slidey .projects .project {
     position: absolute;
-    top: 30%;
+    inset: 0 0 0 0;
+}
+
+.slidey .projects .project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slidey .projects .project .content {
+    position: absolute;
+    letter-spacing: 2px;
+    top: 20%;
+    width: 1148px;
+    max-width: 80%;
+    left: 45%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.slidey .projects .project .content .title {
+    font-family: Retrowavin;
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 1.3em;
+    color: #F1EEE8;
+    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+}
+
+.slidey .projects .project .content .genre {
+    font-family: RYSans;
+    font-weight: bold;
+    letter-spacing: 7px;
+    line-height: 1.3em;
+}
+
+.slidey .projects .project .content .describing{
+    font-family: RYsans;
+}
+
+.smolprojects{
+    position: absolute;
+    bottom:50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    gap: 20px;
+}
+
+.smolprojects .smolproject{
+    width: 160px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.smolprojects .smolproject img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.smolprojects .smolproject .content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: #000;
+    font-family: RYSans;
+}
+
+.smolprojects .smolproject .content .title{
+    font-weight: bold;
+}
+
+.arrows{
+    position: absolute;
+    top: 70%;
+    right:52%;
+    width: 400px;
+    max-width: 30%;
+    display: flex;
+    gap: 30px;
     align-items: center;
 }
 
-/* .skills h5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 4;
-    color: #000;
+.arrows button{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    background-color: #F1EEE844;
+    border: none;
+    font-family: monospace;
+    color: #F1EEE8;
+    font-weight: bold;
+    font-size: large;
+    transition: .5s;
+    z-index: 100;
+}
+
+.arrows button:hover{
+    background-color: #F1EEE8;
+    color:  #000;
+}
+
+.slidey .projects .project:nth-child(1){
+    z-index: 1;
+}
+
+.slidey .projects .project:nth-child(1) .genre,
+.slidey .projects .project:nth-child(1) .title,
+.slidey .projects .project:nth-child(1) .describing{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: show 0.5s 1s linear 1 forwards;
+}
+
+.slidey.next .projects .project:nth-child(1) img{
+    width: 160px;
+    height: 220px;
     position: absolute;
-    left: 0px;
-    background-color: #DAD0C8;
-    width: 150px;
-    height: 100px;
-    font-size: 20px;
-    transform: rotate(-90deg);
+    left: 50%;
+    bottom: 50%;
+    border-radius: 20px;
+    animation: swapper 0.5s linear 1 forwards;
+}
+
+.slidey.next .smolprojects .smolproject:nth-last-child(1){
+    width: 0;
+    overflow: hidden;
+    animation: swapped .5s linear 1 forwards;
+}
+
+.slidey.next .smolprojects{
+    transform: translateX(150px);
+    animation: back .5s linear 1 forwards;
+}
+
+.slidey.then .projects .project:nth-child(2){
+    z-index: 2;
+}
+
+.slidey.then .projects .project:nth-child(2) img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: outside .5s linear 1 forwards;
+}
+
+.slidey.then .smolprojects .smolproject:nth-child(1){
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: swapped .5s linear 1 forwards;
+}
+
+/* .slidey.then .smolprojects{
+    transform: translateX(-150px);
+    animation: front .5s linear 1 forwards;
 } */
 
-.tickets {
-    display: flex;
-    animation: scroll 10s linear infinite;
-    /* animation-delay: 20s; */
+.slidey.then .projects .project:nth-child(2) .genre,
+.slidey.then .projects .project:nth-child(2) .title,
+.slidey.then .projects .project:nth-child(2) .describing{
+    animation: outContents .5s linear 1 forwards;
 }
 
-.tickets:nth-child(2){
-    animation: scrolltoo 10s linear infinite;
-    animation-delay: 15s;
+.slidey.next .arrows button,
+.slidey.then .arrows button{
+    pointer-events: none;
 }
 
-.ticket img {
-    width: 300px;
-    height: 150px;
-}
-
-.tickets:hover {
-    animation-play-state: paused;
-    cursor: pointer;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(-100%);
+@keyframes outContents{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
     }
 }
-@keyframes scrolltoo {
-    0% {
+
+@keyframes outside{
+    to{
+        width: 160px;
+        height: 220px;
+        border-radius: 20px;
+        left: 50%;
+        bottom: 50px;
+    }
+}
+
+@keyframes front{
+    to{
         transform: translateX(0);
     }
+}
 
-    100% {
-        transform: translateX(-200%);
+@keyframes back{
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes swapped{
+    to{
+        width: 150px;
+    }
+}
+
+@keyframes swapper{
+    to{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+
+@keyframes show{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}
+
+@font-face {
+    font-family: RYSans;
+    src: url('../Fonts/restless-youth-sans.otf');
+}
+
+@font-face {
+    font-family: Retrowavin;
+    src: url('../Fonts/Retrowave-qZR55.ttf');
+}
+
+@media screen and (max-width: 755px){
+    .slidey .projects .project .content{
+        padding-right: 0;
+    }
+    .slidey .projects .project .content .title{
+        font-size: 40px;
     }
 }
