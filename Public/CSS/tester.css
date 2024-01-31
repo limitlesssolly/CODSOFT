@@ -168,11 +168,6 @@
     animation: swapped .5s linear 1 forwards;
 }
 
-/* .slidey.then .smolprojects{
-    transform: translateX(-150px);
-    animation: front .5s linear 1 forwards;
-} */
-
 .slidey.then .projects .project:nth-child(2) .genre,
 .slidey.then .projects .project:nth-child(2) .title,
 .slidey.then .projects .project:nth-child(2) .describing{

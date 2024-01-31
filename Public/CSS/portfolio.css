@@ -151,6 +151,285 @@ body {
     cursor: pointer;
 }
 
+.projecting{
+    position: absolute;
+    top: 40%;
+    overflow: hidden;
+}
+
+.projecting h5{
+    font-size: 80px;
+    color: #F1EEE8;
+    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+    position: relative;
+    bottom: 20px;
+    left: 45%;
+    font-family: Retrowavin;
+}
+
+.quality{
+    position: absolute;
+    z-index: 4;
+    top: 3%;
+    left: 2%;
+    width: 200px;
+    height: 200px;
+}
+
+.slidey {
+    width: 95vw;
+    height: 95vh;
+    position: relative;
+    left: 7%;
+}
+
+.slidey .projects .project {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.slidey .projects .project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.slidey .projects .project .content {
+    position: absolute;
+    letter-spacing: 2px;
+    top: 0%;
+    padding-top: 140px;
+    padding-left: 100px;
+    width: 590px;
+    height: 900px;
+    left: 20%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #000;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+}
+
+.slidey .projects .project .content .title {
+    font-family: Retrowavin;
+    font-weight: bold;
+    font-size: 4em;
+    line-height: 1.5em;
+    color: #F1EEE8;
+    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+}
+
+.slidey .projects .project .content .genre {
+    font-family: RYSans;
+    font-weight: bold;
+    letter-spacing: 7px;
+    line-height: 1.3em;
+}
+
+.slidey .projects .project .content .describing{
+    font-family: RYsans;
+    width: 400px;
+}
+
+.slidey .projects .project .content .preview{
+    margin-top:20px;
+}
+
+.slidey .projects .project .content button{
+    width: 100px;
+    height: 50px;
+    border-radius:10px;
+    background-color: #F1EEE89a;
+    border: none;
+    font-family: RYsans;
+    color: #F1EEE8;
+    font-weight: bold;
+    font-size: large;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.slidey .projects .project .content button:hover{
+    background-color: #F1EEE8;
+    color:  #000;
+    cursor: pointer;
+}
+
+.slidey .projects .project .popups{
+    position: absolute;
+    top: 0;
+    left: -30px;
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.slidey .projects .project .popups span{
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.slidey .projects .project .popups img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.smolprojects{
+    position: absolute;
+    bottom:50px;
+    left: 50%;
+    width: max-content;
+    z-index: 4;
+    display: flex;
+    gap: 20px;
+}
+
+.smolprojects .smolproject{
+    width: 160px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.smolprojects .smolproject img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.smolprojects .smolproject .content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: #000;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+}
+
+.smolprojects .smolproject .content .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.arrows{
+    position: absolute;
+    top: 70%;
+    right:60%;
+    width: 400px;
+    max-width: 30%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.arrows button{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    background-color: #f1eee79a;
+    border: none;
+    font-family: monospace;
+    color: #F1EEE8;
+    font-weight: bold;
+    font-size: large;
+    transition: .5s;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.arrows button:hover{
+    background-color: #F1EEE8;
+    color:  #000;
+    cursor: pointer;
+}
+
+.slidey .projects .project:nth-child(1){
+    z-index: 1;
+}
+
+.slidey .projects .project:nth-child(1) .genre,
+.slidey .projects .project:nth-child(1) .title,
+.slidey .projects .project:nth-child(1) .describing,
+.slidey .projects .project:nth-child(1) .preview{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: show 0.5s 1s linear 1 forwards;
+}
+
+.slidey.next .projects .project:nth-child(1) img{
+    width: 160px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    border-radius: 20px;
+    animation: swapper 0.5s linear 1 forwards;
+}
+
+.slidey.next .smolprojects .smolproject:nth-last-child(1){
+    width: 0;
+    overflow: hidden;
+    animation: swapped .5s linear 1 forwards;
+}
+
+.slidey.next .smolprojects{
+    transform: translateX(150px);
+    animation: back .5s linear 1 forwards;
+}
+
+.slidey.then .projects .project:nth-child(2){
+    z-index: 2;
+}
+
+.slidey.then .projects .project:nth-child(2) img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: outside .5s linear 1 forwards;
+}
+
+.slidey.then .smolprojects .smolproject:nth-child(1){
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: swapped .5s linear 1 forwards;
+}
+
+.slidey.then .projects .project:nth-child(2) .genre,
+.slidey.then .projects .project:nth-child(2) .title,
+.slidey.then .projects .project:nth-child(2) .describing,
+.slidey.then .projects .project:nth-child(2) .preview{
+    animation: outContents .5s linear 1 forwards;
+}
+
+.slidey.next .arrows button,
+.slidey.then .arrows button{
+    pointer-events: none;
+}
+
 
 @media (max-width: 755px){
     .discription {
@@ -160,6 +439,12 @@ body {
     }
     .click {
         font-size: 15px;
+    }
+    .slidey .projects .project .content{
+        padding-right: 0;
+    }
+    .slidey .projects .project .content .title{
+        font-size: 40px;
     }
 }
 
@@ -180,6 +465,60 @@ body {
 
     100% {
         transform: translateX(-100%);
+    }
+}
+
+@keyframes outContents{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+@keyframes outside{
+    to{
+        width: 160px;
+        height: 220px;
+        border-radius: 20px;
+        left: 50%;
+        bottom: 50px;
+    }
+}
+
+@keyframes front{
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes back{
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes swapped{
+    to{
+        width: 150px;
+    }
+}
+
+@keyframes swapper{
+    to{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+
+@keyframes show{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
     }
 }
 
