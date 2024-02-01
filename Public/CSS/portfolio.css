@@ -10,7 +10,7 @@ beige #DAD0C8 */
     font-family: RYSans;
 }
 
-html{
+html {
     position: relative;
     min-height: 100%;
 }
@@ -18,7 +18,7 @@ html{
 body {
     background-color: #BED1CD;
     display: flex;
-    height: 2000px;
+    height: 3500px;
     transition: .4s;
 }
 
@@ -26,7 +26,7 @@ body {
     display: flex;
     flex-direction: row;
     position: relative;
-    top: 7%;
+    top: 4%;
     z-index: 1;
     max-height: 400px;
     /* background-color: #000; */
@@ -50,7 +50,7 @@ body {
 }
 
 .click {
-    margin: 20px 20px 0 0 ;
+    margin: 20px 20px 0 0;
     background-color: #F1EEE8;
     border: 2px solid #DAD0C8;
     border-radius: 30px;
@@ -64,7 +64,7 @@ body {
 }
 
 
-.click a{
+.click a {
     text-decoration: none;
     color: #000;
 }
@@ -80,7 +80,7 @@ body {
 }
 
 .frame {
-    width:345px;
+    width: 345px;
     height: 430px;
     position: absolute;
     top: -10%;
@@ -114,7 +114,7 @@ body {
     height: 150px;
     background-color: #F1EEE8;
     position: absolute;
-    top: 30%;
+    top: 18%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -151,13 +151,13 @@ body {
     cursor: pointer;
 }
 
-.projecting{
+.projecting {
     position: absolute;
-    top: 40%;
+    top: 24%;
     overflow: hidden;
 }
 
-.projecting h5{
+.projecting h5 {
     font-size: 80px;
     color: #F1EEE8;
     text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
@@ -167,7 +167,7 @@ body {
     font-family: Retrowavin;
 }
 
-.quality{
+.quality {
     position: absolute;
     z-index: 4;
     top: 3%;
@@ -207,9 +207,9 @@ body {
     padding-right: 30%;
     box-sizing: border-box;
     color: #000;
-    background: linear-gradient(135deg, rgba(255,255,255,0.6), rgba(255,255,255,0));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter:blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .slidey .projects .project .content .title {
@@ -228,19 +228,19 @@ body {
     line-height: 1.3em;
 }
 
-.slidey .projects .project .content .describing{
+.slidey .projects .project .content .describing {
     font-family: RYsans;
     width: 500px;
 }
 
-.slidey .projects .project .content .preview{
-    margin-top:20px;
+.slidey .projects .project .content .preview {
+    margin-top: 20px;
 }
 
-.slidey .projects .project .content button{
+.slidey .projects .project .content button {
     width: 100px;
     height: 50px;
-    border-radius:10px;
+    border-radius: 10px;
     background-color: #000;
     border: none;
     font-family: RYsans;
@@ -251,9 +251,9 @@ body {
     cursor: pointer;
 }
 
-.slidey .projects .project .content button:hover{
+.slidey .projects .project .content button:hover {
     background-color: #F1EEE8;
-    color:  #000;
+    color: #000;
     cursor: pointer;
 }
 
@@ -331,10 +331,10 @@ body {
     text-align: center;
 } */
 
-.arrows{
+.arrows {
     position: absolute;
     top: 75%;
-    right:67%;
+    right: 67%;
     width: 400px;
     max-width: 30%;
     display: flex;
@@ -342,10 +342,10 @@ body {
     align-items: center;
 }
 
-.arrows button{
+.arrows button {
     width: 50px;
     height: 50px;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: #000;
     border: none;
     font-family: monospace;
@@ -357,27 +357,27 @@ body {
     cursor: pointer;
 }
 
-.arrows button:hover{
+.arrows button:hover {
     background-color: #F1EEE8;
-    color:  #000;
+    color: #000;
     cursor: pointer;
 }
 
-.slidey .projects .project:nth-child(1){
+.slidey .projects .project:nth-child(1) {
     z-index: 1;
 }
 
 .slidey .projects .project:nth-child(1) .genre,
 .slidey .projects .project:nth-child(1) .title,
 .slidey .projects .project:nth-child(1) .describing,
-.slidey .projects .project:nth-child(1) .preview{
+.slidey .projects .project:nth-child(1) .preview {
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
     animation: show 0.5s 1s linear 1 forwards;
 }
 
-.slidey.next .projects .project:nth-child(1) img{
+.slidey.next .projects .project:nth-child(1) img {
     width: 160px;
     height: 220px;
     position: absolute;
@@ -387,29 +387,29 @@ body {
     animation: swapper 0.5s linear 1 forwards;
 }
 
-.slidey.next .smolprojects .smolproject:nth-last-child(1){
+.slidey.next .smolprojects .smolproject:nth-last-child(1) {
     width: 0;
     overflow: hidden;
     animation: swapped .5s linear 1 forwards;
 }
 
-.slidey.next .smolprojects{
+.slidey.next .smolprojects {
     transform: translateX(150px);
     animation: back .5s linear 1 forwards;
 }
 
-.slidey.then .projects .project:nth-child(2){
+.slidey.then .projects .project:nth-child(2) {
     z-index: 2;
 }
 
-.slidey.then .projects .project:nth-child(2) img{
+.slidey.then .projects .project:nth-child(2) img {
     position: absolute;
     bottom: 0;
     left: 0;
     animation: outside .5s linear 1 forwards;
 }
 
-.slidey.then .smolprojects .smolproject:nth-child(1){
+.slidey.then .smolprojects .smolproject:nth-child(1) {
     width: 0;
     overflow: hidden;
     opacity: 0;
@@ -419,30 +419,225 @@ body {
 .slidey.then .projects .project:nth-child(2) .genre,
 .slidey.then .projects .project:nth-child(2) .title,
 .slidey.then .projects .project:nth-child(2) .describing,
-.slidey.then .projects .project:nth-child(2) .preview{
+.slidey.then .projects .project:nth-child(2) .preview {
     animation: outContents .5s linear 1 forwards;
 }
 
 .slidey.next .arrows button,
-.slidey.then .arrows button{
+.slidey.then .arrows button {
     pointer-events: none;
 }
 
+.skillstoo {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 1%;
+    top: 49%;
+    width: 1450px;
+    height: 500px;
+}
 
-@media (max-width: 755px){
+.skillstoo h5 {
+    font-size: 60px;
+    color: #F1EEE8;
+    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+    position: absolute;
+    left: 0%;
+    top: 2%;
+    padding: 10px 0;
+    /* background-color: #DAD0C8;
+    border-radius: 10px;
+    box-shadow: 1px 1px #F1EEE8, 2px 2px #F1EEE8, 3px 3px #F1EEE8, 4px 4px #F1EEE8; */
+    text-align: center;
+    width: 100%;
+    font-family: Retrowavin;
+}
+
+.skillstoo .signs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 30%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.skillstoo .signs img {
+    padding: 30px;
+    width: 350px;
+    height: 250px;
+}
+
+.team {
+    display: flex;
+    position: absolute;
+    top: 72%;
+}
+
+.team h5 {
+    font-family: Retrowavin;
+    padding-left: 10%;
+    width: 500px;
+    font-size: 60px;
+    color: #F1EEE8;
+    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+}
+
+.team img {
+    position: absolute;
+    margin: 10%;
+    top: 100%;
+    width: 1200px;
+    height: 300px;
+    z-index: 2;
+}
+
+.team img:nth-child(2){
+    left: 30%;
+    top: 500%;
+}
+
+.team .insideimgs img{
+    width: 400px;
+    height: 230px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.team .insideimgs .ceo{
+    position: absolute;
+    left: 0%;
+    top: 140%;
+    object-position: 50% 30%;
+}
+
+.team .insideimgs .ceolabel{
+    z-index: 3;
+    position: absolute;
+    left:  45%;
+    top: 420%;
+    font-family: RYsans;
+    font-size: 30px;
+    color: #F1EEE8;
+    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+}
+
+.team .insideimgs .cto{
+    position: absolute;
+    left: 80%;
+    top: 140%;
+    object-position: 50% 30%;
+}
+
+.team .insideimgs .ctolabel{
+    z-index: 3;
+    position: absolute;
+    left:  125%;
+    top: 420%;
+    font-family: RYsans;
+    font-size: 30px;
+    color: #F1EEE8;
+    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+}
+
+.team .insideimgs .photographer{
+    position: absolute;
+    left: 160%;
+    top: 142%;
+    object-position: 0% 40%;
+}
+
+.team .insideimgs .photographerlabel{
+    z-index: 3;
+    position: absolute;
+    left:  187%;
+    top: 420%;
+    font-family: RYsans;
+    font-size: 30px;
+    color: #F1EEE8;
+    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+}
+
+.team .insideimgs .stylist{
+    position: absolute;
+    left: 30%;
+    top: 540%;
+    object-position: 0% 40%;
+}
+
+.team .insideimgs .stylistlabel{
+    z-index: 3;
+    position: absolute;
+    left:  70%;
+    top: 820%;
+    font-family: RYsans;
+    font-size: 30px;
+    color: #F1EEE8;
+    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+}
+
+.team .insideimgs .marketingmanager{
+    position: absolute;
+    left: 110%;
+    top: 540%;
+    object-position: 0% 30%;
+}
+
+.team .insideimgs .marketinglabel{
+    z-index: 3;
+    position: absolute;
+    width: 300px;
+    left:  130%;
+    top: 820%;
+    font-family: RYsans;
+    font-size: 30px;
+    color: #F1EEE8;
+    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+}
+
+.team .insideimgs .intern{
+    position: absolute;
+    left: 190%;
+    top: 540%;
+    object-position: 0% 60%;
+}
+
+.team .insideimgs .internlabel{
+    z-index: 3;
+    position: absolute;
+    left:  230%;
+    top: 820%;
+    font-family: RYsans;
+    font-size: 30px;
+    color: #F1EEE8;
+    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+}
+
+@media (max-width: 755px) {
     .discription {
         font-size: 20px;
         width: 400px;
         left: 10%;
     }
+
     .click {
         font-size: 15px;
     }
-    .slidey .projects .project .content{
+
+    .slidey .projects .project .content {
         padding-right: 0;
     }
-    .slidey .projects .project .content .title{
+
+    .slidey .projects .project .content .title {
         font-size: 40px;
+    }
+
+    .skillstoo .signs {
+        flex-direction: column;
     }
 }
 
@@ -466,16 +661,16 @@ body {
     }
 }
 
-@keyframes outContents{
-    to{
+@keyframes outContents {
+    to {
         transform: translateY(-150px);
         filter: blur(20px);
         opacity: 0;
     }
 }
 
-@keyframes outside{
-    to{
+@keyframes outside {
+    to {
         width: 160px;
         height: 220px;
         border-radius: 20px;
@@ -484,26 +679,26 @@ body {
     }
 }
 
-@keyframes front{
-    to{
+@keyframes front {
+    to {
         transform: translateX(0);
     }
 }
 
-@keyframes back{
-    to{
+@keyframes back {
+    to {
         transform: translateX(0);
     }
 }
 
-@keyframes swapped{
-    to{
+@keyframes swapped {
+    to {
         width: 150px;
     }
 }
 
-@keyframes swapper{
-    to{
+@keyframes swapper {
+    to {
         width: 100%;
         height: 100%;
         left: 0;
@@ -512,8 +707,8 @@ body {
     }
 }
 
-@keyframes show{
-    to{
+@keyframes show {
+    to {
         opacity: 1;
         filter: blur(0);
         transform: translateX(0);
