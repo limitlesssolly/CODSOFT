@@ -1,107 +1,119 @@
-/* main colors: 
-blue #BED1CD
-cream #F1EEE8
-beige #DAD0C8 */
+/* Main Colors:
+tan #F3D8D2
+coral #D99D97
+blue #8596B4
+navy #092E4C
+*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: RYSans;
 }
 
 .navs {
-    background-color: #F1EEE8;
     display: flex;
     top: 0;
-    width: auto;
     transition: .4s;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.iconic {
-    height: 45px;
-    width: 45px;
+.offer {
+    background-color: #D99D97;
+    color: #092E4C;
+    width: 100vw;
     position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-.iconic:hover {
-    animation: rotational 1.5s ease;
-    cursor: pointer;
-}
-
-.named {
-    display: flex;
-    padding: 18px 0;
-    text-decoration: none;
-    color: #000;
-    position: absolute;
-    top: 0px;
-    left: 60px;
-}
-
-.named:hover {
-    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
-    color: #F1EEE8;
-    cursor: pointer;
-}
-
-.named span {
-    font-weight: 650;
-}
-
-#burger {
-    height: 20px;
-    width: 20px;
-    display: none;
+    top: 0%;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 25px;
-    right: 53px;
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    font-family: Bartex;
+    font-size: 25px;
 }
 
-#burger:hover {
-    cursor: pointer;
+.offer h5 span {
+    font-family: Extras;
 }
-
 
 .navi-items ul {
+    width: 100vw;
     position: absolute;
-    top: 1%;
-    right: 0%;
+    top: 7%;
+    left: 5%;
     justify-content: center;
     align-items: center;
     display: flex;
-    flex-direction: row;
     list-style-type: none;
-    margin: 0;
+    margin: 5px;
     padding: 0;
+}
+
+.logo h5 {
+    font-family: Dirly;
+    font-size: 40px;
+    margin: 0 15px;
+    padding-bottom: 20px;
+    color: #092E4C;
 }
 
 .navi-items ul li a {
     display: flex;
-    padding: 18px;
-    color: #000;
+    padding: 0 10px;
+    color: #092E4C;
     text-align: center;
     text-decoration: none;
+    font-family: Bartex;
 }
 
-.navi-items ul li a:hover {
+li:after {
+    content: '';
+    margin: auto;
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: transparent;
+    transition: all 0.5s ease;
+}
+
+li:hover:after {
+    width: 70%;
+    background-color: #D99D97;
+}
+
+.navi-items ul button {
+    border: none;
+    font-family: Bartex;
+    background-color: #D99D97;
+    border-radius: 8px;
+    color: #FFFFFF;
     cursor: pointer;
-    text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
-    color: #F1EEE8;
+    font-size: 17px;
+    line-height: 20px;
+    margin: 10px;
+    padding: 10px 16px;
+    text-align: center;
+    position: relative;
+    left: 13%;
 }
 
-@keyframes rotational {
-    from {
-        transform: rotate(0);
-    }
+.navi-items ul button:hover {
+    background-color: #F3D8D2;
+    color: #092E4C;
+}
 
-    to {
-        transform: rotate(360deg);
-    }
+@font-face {
+    font-family: Dirly;
+    src: url('../Fonts/DirlyBelly-Regular.ttf');
+}
 
+@font-face {
+    font-family: Bartex;
+    src: url('../Fonts/Bartex-Regular.ttf');
+}
+
+@font-face {
+    font-family: Extras;
+    src: url('../Fonts/restless-youth-sans.otf');
 }
