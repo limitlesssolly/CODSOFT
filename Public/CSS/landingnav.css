@@ -21,7 +21,7 @@ navy #092E4C
     font-size: 18px;
 }
 
-.offer {
+.navs .offer {
     background-color: #D99D97;
     overflow-x: hidden;
     color: #092E4C;
@@ -34,14 +34,14 @@ navy #092E4C
     margin: 0;
     padding: 10px;
     font-family: Bartex;
-    font-size: 25px;
+    font-size: 23px;
 }
 
-.offer h5 span {
+.navs .offer h5 span {
     font-family: Extras;
 }
 
-.navi-items ul {
+.navs .navi-items ul {
     overflow-x: hidden;
     width: 100vw;
     text-align: center;
@@ -56,15 +56,15 @@ navy #092E4C
     padding: 0;
 }
 
-.logo h5 {
+.navs .logo h5 {
     font-family: Dirly;
-    font-size: 40px;
+    font-size: 35px;
     margin: 0 15px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     color: #092E4C;
 }
 
-.navi-items ul li a {
+.navs .navi-items ul li a {
     margin: 5px;
     display: flex;
     padding: 0 10px;
@@ -74,7 +74,7 @@ navy #092E4C
     font-family: Bartex;
 }
 
-li:after {
+.navs li:after {
     content: '';
     margin: auto;
     display: block;
@@ -84,17 +84,17 @@ li:after {
     transition: all 0.5s ease;
 }
 
-li:hover:after {
+.navs li:hover:after {
     width: 70%;
     background-color: #D99D97;
 }
 
-.signups{
+.navs .signups{
     position: absolute;
     right: 1%;
 }
 
-.navi-items ul button {
+.navs .navi-items ul button {
     border: none;
     font-family: Bartex;
     background-color: #D99D97;
@@ -103,12 +103,12 @@ li:hover:after {
     cursor: pointer;
     font-size: 17px;
     line-height: 20px;
-    margin: 10px;
+    margin: 0 10px;
     padding: 10px 16px;
     text-align: center;
 }
 
-.navi-items ul button:hover {
+.navs .navi-items ul button:hover {
     background-color: #F3D8D2;
     color: #092E4C;
 }

@@ -1,0 +1,87 @@
+/* Main Colors:
+tan #F3D8D2
+coral #D99D97
+blue #8596B4
+navy #092E4C
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.foots{
+    font-family: Bartex;
+    margin-top: auto;
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: .4s;
+    align-items: center;
+    background-color: #092E4C;
+    justify-content: space-between;
+}
+
+.foots .description {
+    max-width: 350px;
+    color: white;
+}
+
+.foots .clickables {
+    display: flex;
+}
+
+.foots .logo h5 {
+    font-family: Dirly;
+    font-size: 40px;
+    color: #8596B4;
+}
+
+.foots .footy-items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;
+}
+
+.foots .clickables .footy-items ul li{
+    list-style: none;
+}
+
+.foots .clickables .footy-items ul li a{
+    text-decoration: none;
+    color: #8596B4;
+} 
+
+.foots .clickables .socials{
+    color: #8596B4;
+}
+
+.foots .copyrighted {
+    font-family: Bartex;
+    font-size: 20px;
+    color: #8596B4;
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+}
+
+@font-face {
+    font-family: Dirly;
+    src: url('../Fonts/DirlyBelly-Regular.ttf');
+}
+
+@font-face {
+    font-family: Bartex;
+    src: url('../Fonts/Bartex-Regular.ttf');
+}
+
+@font-face {
+    font-family: Extras;
+    src: url('../Fonts/restless-youth-sans.otf');
+}
