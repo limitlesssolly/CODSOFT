@@ -9,17 +9,21 @@ navy #092E4C
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 
 .navs {
     display: flex;
     top: 0;
     transition: .4s;
+    flex-wrap: wrap;
+    justify-content: space-between;
     font-size: 18px;
 }
 
 .offer {
     background-color: #D99D97;
+    overflow-x: hidden;
     color: #092E4C;
     width: 100vw;
     position: absolute;
@@ -38,15 +42,17 @@ navy #092E4C
 }
 
 .navi-items ul {
+    overflow-x: hidden;
     width: 100vw;
+    text-align: center;
     position: absolute;
     top: 7%;
-    left: 5%;
+    left: 0px;
     justify-content: center;
     align-items: center;
     display: flex;
     list-style-type: none;
-    margin: 5px;
+    margin: 0px;
     padding: 0;
 }
 
@@ -59,6 +65,7 @@ navy #092E4C
 }
 
 .navi-items ul li a {
+    margin: 5px;
     display: flex;
     padding: 0 10px;
     color: #092E4C;
@@ -82,6 +89,11 @@ li:hover:after {
     background-color: #D99D97;
 }
 
+.signups{
+    position: absolute;
+    right: 1%;
+}
+
 .navi-items ul button {
     border: none;
     font-family: Bartex;
@@ -94,8 +106,6 @@ li:hover:after {
     margin: 10px;
     padding: 10px 16px;
     text-align: center;
-    position: relative;
-    left: 13%;
 }
 
 .navi-items ul button:hover {
