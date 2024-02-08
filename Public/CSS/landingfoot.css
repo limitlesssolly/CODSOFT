@@ -26,12 +26,13 @@ navy #092E4C
 
 .foots .description {
     line-height: 20px;
-    max-width: 320px;
+    max-width: 350px;
     color: #8596B4;
     position: relative;
     right:410px;
     top: 40px;
     margin: 50px;
+    font-size: 18px;
 }
 
 .foots .description a {
@@ -52,6 +53,7 @@ navy #092E4C
 }
 
 .foots .footy-items {
+    font-size: 18px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -76,6 +78,7 @@ navy #092E4C
 }
 
 .foots .socials a i {
+    font-size: 20px;
     color: #8596B4;
     padding: 10px;
 }

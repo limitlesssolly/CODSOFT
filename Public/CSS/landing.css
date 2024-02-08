@@ -5,6 +5,12 @@ blue #8596B4
 navy #092E4C
 */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .lander {
     height: 1000px;
     width: 100vw;

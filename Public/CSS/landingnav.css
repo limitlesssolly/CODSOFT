@@ -9,7 +9,6 @@ navy #092E4C
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
 }
 
 .navs {
@@ -42,18 +41,14 @@ navy #092E4C
 }
 
 .navs .navi-items ul {
-    overflow-x: hidden;
     width: 100vw;
     text-align: center;
     position: absolute;
     top: 7%;
-    left: 0px;
     justify-content: center;
     align-items: center;
     display: flex;
     list-style-type: none;
-    margin: 0px;
-    padding: 0;
 }
 
 .navs .logo h5 {
@@ -91,7 +86,7 @@ navy #092E4C
 
 .navs .signups{
     position: absolute;
-    right: 1%;
+    right: 2%;
 }
 
 .navs .navi-items ul button {
