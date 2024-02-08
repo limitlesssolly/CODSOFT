@@ -11,65 +11,87 @@ navy #092E4C
     box-sizing: border-box;
 }
 
-.foots{
+.foots {
     font-family: Bartex;
     margin-top: auto;
     overflow: hidden;
-    flex-wrap: wrap;
     display: flex;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    transition: .4s;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    width: 100vw;
+    transition: .4s;
     background-color: #092E4C;
-    justify-content: space-between;
 }
 
 .foots .description {
-    max-width: 350px;
-    color: white;
+    line-height: 20px;
+    max-width: 320px;
+    color: #8596B4;
+    position: relative;
+    right:410px;
+    top: 40px;
+    margin: 50px;
 }
 
-.foots .clickables {
-    display: flex;
+.foots .description a {
+    color: #D99D97;
+}
+
+.foots .description a:hover {
+    color: #F3D8D2;
 }
 
 .foots .logo h5 {
     font-family: Dirly;
     font-size: 40px;
     color: #8596B4;
+    margin-bottom: 50px;
+    position: relative;
+    right:70px;
 }
 
-.foots .footy-items ul {
+.foots .footy-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    line-height: 30px;
+    position: relative;
+    right: 250px;
+}
+
+.foots .clickables .footy-items ul {
     list-style: none;
-    padding: 0;
-    margin: 0 20px;
+    padding: 40px;
 }
 
-.foots .clickables .footy-items ul li{
-    list-style: none;
-}
-
-.foots .clickables .footy-items ul li a{
+.foots .clickables .footy-items ul li a {
     text-decoration: none;
     color: #8596B4;
-} 
+}
 
-.foots .clickables .socials{
+.foots .clickables .footy-items ul li a:hover {
+    color: #D99D97;
+}
+
+.foots .socials a i {
     color: #8596B4;
+    padding: 10px;
+}
+
+.foots .socials a i:hover {
+    color: #D99D97;
 }
 
 .foots .copyrighted {
     font-family: Bartex;
-    font-size: 20px;
+    font-size: 18px;
     color: #8596B4;
-    position: absolute;
     text-align: center;
-    padding: 5px;
-    bottom: 0;
     width: 100%;
 }
+
 
 @font-face {
     font-family: Dirly;
