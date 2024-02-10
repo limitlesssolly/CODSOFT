@@ -19,7 +19,7 @@ navy #092E4C
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     transition: .4s;
     background-color: #092E4C;
 }

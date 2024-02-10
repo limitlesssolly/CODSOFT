@@ -12,6 +12,54 @@ navy #092E4C
 }
 
 .lander {
-    height: 1000px;
-    width: 100vw;
+    height: 3000px;
+    width: 100%;
+}
+
+.intros img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: 0% 35%;
+    filter: blur(1px);
+    position: relative;
+    z-index: -1;
+}
+
+.intros h5 {
+    font-family: Bartex;
+    font-size: 50px;
+    z-index: 1;
+    position: absolute;
+    top: 45%;
+    left: 21.5%;
+    max-width: 850px;
+    color: #fff;
+    text-shadow: 2px 2px #D99D97;
+}
+
+.intros p {
+    font-family: Bartex;
+    z-index: 1;
+    position: absolute;
+    top: 56%;
+    left: 43%;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px #D99D97;
+}
+
+@font-face {
+    font-family: Dirly;
+    src: url('../Fonts/DirlyBelly-Regular.ttf');
+}
+
+@font-face {
+    font-family: Bartex;
+    src: url('../Fonts/Bartex-Regular.ttf');
+}
+
+@font-face {
+    font-family: Extras;
+    src: url('../Fonts/restless-youth-sans.otf');
 }
