@@ -179,6 +179,159 @@
     pointer-events: none;
 }
 
+.prods {
+    font-family: Bartex;
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+}
+
+.baked {
+    display: grid;
+    row-gap: 4rem;
+}
+
+.bakedGood {
+    position: relative;
+    overflow: hidden;
+}
+
+.bakedImg {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    object-position: 0% 60%;
+}
+
+.goodsDatas {
+    width: 300px;
+    background-color: #F3D8D2;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.descriptors {
+    display: block;
+    font-size: 15px;
+    margin-bottom: .25rem;
+    color: #092E4C;
+}
+
+.goodTitle {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: .75rem;
+    color: #092E4C;
+}
+
+.orderNow {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #8596B4;
+}
+
+.orderNow:hover {
+    text-decoration: underline;
+}
+
+.bakedGood:hover .goodsDatas {
+    animation: showsData 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.bakedGood:hover{
+    animation: removesOverflow 2s forwards;
+}
+
+.bakedGood:not(:hover){
+    animation: showsOverflow 2s forwards;
+}
+
+.bakedGood:not(:hover) .goodsDatas{
+    animation: removesData 1s forwards;
+}
+
+@media screen and (max-width: 340px){
+    .baked{
+        margin-inline: 1rem;
+    }
+    .goodsDatas{
+        width: 250px;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .baked{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1120px){
+    .prods{
+       height: 100vh;
+    }
+
+    .baked{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.5rem;
+    }
+
+    .bakedImg{
+        width: 400px;
+    }
+}
+
+@keyframes showsData{
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes removesOverflow{
+    to{
+        overflow: initial;
+    }
+}
+
+@keyframes removesData{
+    0%{
+        transform: translateY(-7rem);
+    }
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(.5rem);
+    }
+}
+
+@keyframes showsOverflow{
+    0%{
+        overflow: initial;
+        pointer-events: none;
+    }
+    50%{
+        overflow: hidden;
+    }
+}
+
 @keyframes outContents{
     to{
         transform: translateY(-150px);

@@ -12,7 +12,7 @@ navy #092E4C
 }
 
 .lander {
-    height: 3000px;
+    height: 500px;
     width: 100%;
 }
 
@@ -20,7 +20,7 @@ navy #092E4C
     width: 100%;
     height: 700px;
     object-fit: cover;
-    object-position: 0% 35%;
+    object-position: 0% 75%;
     filter: blur(2px);
     position: relative;
     z-index: -1;
@@ -34,172 +34,44 @@ navy #092E4C
     top: 45%;
     left: 21.5%;
     max-width: 850px;
-    color: #fff;
-    text-shadow: 2px 2px #D99D97;
+    color: #092E4C;
+    text-shadow: 2px 2px #F3D8D2;
 }
 
 .intros p {
     font-family: Bartex;
     z-index: 1;
     position: absolute;
-    top: 56%;
+    top: 55%;
     left: 43%;
-    font-size: 20px;
-    color: #fff;
-    text-shadow: 1px 1px #D99D97;
+    font-weight: 500;
+    font-size: 23px;
+    color: #F3D8D2;
+    text-shadow: 1px 1px #092E4C;
 }
 
-.prods {
+.orders{
     font-family: Bartex;
-    display: grid;
-    place-items: center;
-    margin-inline: 1.5rem;
-    padding-block: 5rem;
-}
-
-.baked {
-    display: grid;
-    row-gap: 4rem;
-}
-
-.bakedGood {
-    position: relative;
-    overflow: hidden;
-}
-
-.bakedImg {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 1.5rem;
-    object-position: 0% 100%;
-}
-
-.goodsDatas {
-    width: 300px;
-    background-color: #F3D8D2;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
-    border-radius: 1rem;
+    z-index: 1;
     position: absolute;
-    bottom: -9rem;
-    left: 0;
-    right: 0;
-    margin-inline: auto;
-    opacity: 0;
-    transition: opacity 1s 1s;
-}
-
-.descriptors {
-    display: block;
-    font-size: 15px;
-    margin-bottom: .25rem;
+    top: 65%;
+    left: 45%;
+    border: none;
+    font-family: Bartex;
+    background-color: #D99D97;
+    border-radius: 8px;
     color: #092E4C;
+    cursor: pointer;
+    font-size: 17px;
+    line-height: 20px;
+    margin: 0 10px;
+    padding: 10px 16px;
+    text-align: center;
 }
 
-.goodTitle {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: .75rem;
-    color: #092E4C;
-}
-
-.orderNow {
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-    color: #8596B4;
-}
-
-.orderNow:hover {
-    text-decoration: underline;
-}
-
-.bakedGood:hover .goodsDatas {
-    animation: showsData 1s forwards;
-    opacity: 1;
-    transition: opacity .3s;
-}
-
-.bakedGood:hover{
-    animation: removesOverflow 2s forwards;
-}
-
-.bakedGood:not(:hover){
-    animation: showsOverflow 2s forwards;
-}
-
-.bakedGood:not(:hover) .goodsDatas{
-    animation: removesData 1s forwards;
-}
-
-@media screen and (max-width: 340px){
-    .baked{
-        margin-inline: 1rem;
-    }
-    .goodsDatas{
-        width: 250px;
-        padding: 1rem;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .baked{
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1.5rem;
-    }
-}
-
-@media screen and (min-width: 1120px){
-    .prods{
-       height: 100vh;
-    }
-
-    .baked{
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 1.5rem;
-    }
-
-    .bakedImg{
-        width: 400px;
-    }
-}
-
-@keyframes showsData{
-    50%{
-        transform: translateY(-10rem);
-    }
-    100%{
-        transform: translateY(-7rem);
-    }
-}
-
-@keyframes removesOverflow{
-    to{
-        overflow: initial;
-    }
-}
-
-@keyframes removesData{
-    0%{
-        transform: translateY(-7rem);
-    }
-    50%{
-        transform: translateY(-10rem);
-    }
-    100%{
-        transform: translateY(.5rem);
-    }
-}
-
-@keyframes showsOverflow{
-    0%{
-        overflow: initial;
-        pointer-events: none;
-    }
-    50%{
-        overflow: hidden;
-    }
+.orders:hover {
+    background-color: #092E4C;
+    color: #F3D8D2;
 }
 
 @font-face {
@@ -210,9 +82,4 @@ navy #092E4C
 @font-face {
     font-family: Bartex;
     src: url('../Fonts/Bartex-Regular.ttf');
-}
-
-@font-face {
-    font-family: Extras;
-    src: url('../Fonts/restless-youth-sans.otf');
 }
